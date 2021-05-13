@@ -17,13 +17,11 @@ public class RecipeService {
 
     Logger logger = LoggerFactory.getLogger(RecipeService.class);
 
-    public void saveRecipe(Recipe recipe) {
+    public Recipe saveRecipe(Recipe recipe) {
         logger.info("::::: RecipeService ::::: dish_type :::: " + recipe.getDish_type());
         logger.info("::::: RecipeService ::::: ingredients :::: " + recipe.getIngredients());
-        recipeRepository.save(recipe);
-    }
+        Recipe recipeDetails = recipeRepository.save(recipe);
 
-    public void delete(long id) {
-        recipeRepository.deleteById(id);
+        return recipeDetails;
     }
 }
