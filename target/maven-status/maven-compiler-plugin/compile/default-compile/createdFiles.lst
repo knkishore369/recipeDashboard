@@ -1,5 +1,5 @@
 com\org\capg\recipes\entity\Recipe.class
 com\org\capg\recipes\service\RecipeService.class
-com\org\capg\recipes\controller\RecipesDashboardController.class
 com\org\capg\recipes\repository\RecipeRepository.class
 com\org\capg\recipes\RecipesDashboardApplication.class
+com\org\capg\recipes\controller\RecipesDashboardController.class

@@ -20,20 +20,16 @@ public class Recipe {
     @JsonFormat(pattern="yyyy-MM-dd HH:mm")
     private Date datetime;*/
 
-    //@Column(name = "dish_type")
-    @Column
+    @Column(name = "dish_type")
     private String dish_type;
 
-    //Column(name = "num_of_people")
-    @Column
+    @Column(name = "num_of_people")
     private Long num_of_people;
 
-    //@Column(name = "ingredients")
-    @Column
+    @Column(name = "ingredients")
     private String ingredients;
 
-    //@Column(name = "cooking_instruction")
-    @Column
+    @Column(name = "cooking_instruction")
     private String cooking_instruction;
 
 }
